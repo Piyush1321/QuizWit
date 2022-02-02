@@ -1,0 +1,17 @@
+.signup-cover {
+    background-image: url('../../../public/images/signup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.signup-cover form {
+    width: 600px;
+}
+#email-verified {
+    display: none;
+}
