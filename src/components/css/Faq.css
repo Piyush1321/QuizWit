@@ -1,0 +1,45 @@
+.faq {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+}
+.faq h1 {
+    margin-bottom: 20px;
+}
+.faq .container {
+    width: 750px;
+    color: rgb(233, 233, 233);
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+.faq .question {
+    /* font-weight: bold; */
+    font-size: 20px;
+    padding: 20px;
+    background: #303030;
+    display: flex;
+    cursor: pointer;
+}
+.faq .question:hover {
+    background: #242424;
+}
+.faq .question div:nth-child(1) {
+    flex: 1;
+}
+.faq .answer {
+    padding: 10px;
+    font-size: 15px;
+    padding: 20px;
+    background: #303030;
+    border-top: 1px solid rgb(233, 233, 233);
+    display: none;
+}
+.faq .icon-container {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

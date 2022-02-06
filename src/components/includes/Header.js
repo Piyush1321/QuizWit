@@ -12,7 +12,7 @@ function Header() {
         setSignin(!signin);
     }
     useEffect(() => {
-        Animation.toggleDivVertical('signin-dialog', signin, 250, 0);
+        Animation.toggleDivVertical('signin-dialog', signin, 270, 0);
     }, [signin]);
     return (
         <>
@@ -23,11 +23,11 @@ function Header() {
                     </h3>
                 </Link>
                 <div className='navigation flex-full flex-row jc-c'>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/services'  >Services</NavLink>
-                    <NavLink to='/products' >Blogs</NavLink>
-                    <NavLink to='/contact-us' >Contact Us</NavLink>
-                    <NavLink to='/dashboard' >About Us</NavLink>
+                    <NavLink className='inactive' to='/'>Home</NavLink>
+                    <NavLink className='inactive' to='/services'  >Services</NavLink>
+                    <NavLink className='inactive' to='/products' >Blogs</NavLink>
+                    <NavLink className='inactive' to='/contact-us' >Contact Us</NavLink>
+                    <NavLink className='inactive' to='/dashboard' >About Us</NavLink>
                 </div>
                 <div className='sign-up flex-row'>
                     <Link to='/signup' className='btn btn-primary btn-small'>Sign Up</Link>
@@ -36,8 +36,8 @@ function Header() {
                             <div>
                                 <p>Sign In as</p>
                                 <div className='mt-20 mb-20'>
-                                    <a className='btn btn-primary btn-medium' href='http://localhost:3001' target='_blank'>Admin</a>
-                                    <a className='btn btn-secondary btn-medium ml-10' href='http://localhost:3002' target='_blank'>Student</a>
+                                    <a className='btn btn-primary btn-medium' href='http://localhost:3001' target='_blank'><i className='fas fa-user-cog mr-5'></i> Admin</a>
+                                    <a className='btn btn-secondary btn-medium ml-10' href='http://localhost:3002' target='_blank'><i className='fas fa-user-graduate mr-5'></i> Student</a>
                                 </div>
                                 <div></div>
                             </div>

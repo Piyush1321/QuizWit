@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import Request from '../services/Request';
-import './css/Signup.css'
 import OtpDialog from './util/OtpDialog';
 import Flash from '../services/Flash';
+
+import './css/Signup.css'
 
 function Signup() {
 
@@ -171,109 +172,98 @@ function Signup() {
         }
     }
     return (
-        <div className='signup-cover cover'>
+        <>
             <OtpDialog onclick1={emailVerification} onclick2={matchOtp}/>
-            <form id='signup-form' className='form sign-up-form' onSubmit={registration}>
-                <div className='header'>Registration</div>
-                <div className='input-block'>
-                    <div className='customized-radio-sticky'>
-                        <label>Registration as</label>
-                        <div>
-                            <label className='flex-full'>
-                                <input type='radio' name='user' value='1' />
-                                <span>Admin</span>
-                            </label>
-                            <label className='flex-full'>
-                                <input type='radio' name='user' value='2' />
-                                <span>Student</span>
-                            </label>
+            <div className='signup-cover flex-row'>
+                <div className='flex-full flex-col jc-c ai-e'>
+                    <div>
+                        <h2 className='mb-20'>Explore Free Plan services with a new QuizWit account.</h2>
+                        <p>
+                            To learn more, see 
+                            <br />
+                            <br />
+                            <Link to='' className='cover-btn'>QuizWit Susbcription Plans</Link>
+                        </p>
+                        <br />
+                        <br />
+                        <br />
+                        <h2>See Dashboard UI</h2>
+                        <div className='flex-row flex-wrap pt-20'>
+                            <Link to='' className='cover-btn mr-10'><i className='fas fa-users-cog mr-10'></i> Administrator</Link>
+                            <Link to='' className='cover-btn mr-10'><i className='fas fa-user-graduate mr-10'></i>Student</Link>
+                            <Link to='' className='cover-btn'><i className='fas fa-diagnoses mr-10'></i>Exam</Link>
                         </div>
-                        <div className='response'></div>
                     </div>
                 </div>
-                <div className='input-block'>
-                    <div className='input-container-bb'>
-                        <input type='text' name='firstName' />
-                        <label>First Name</label>
-                        <div className='response'></div>
-                    </div>
-                    <div className='input-container-bb'>
-                        <input type='text' name='lastName' />
-                        <label>Last Name</label>
-                        <div className='response'></div>
-                    </div>
-                </div>
-                <div className='input-block'>
-                    <div className='customized-radio-sticky'>
-                        <label>Gender</label>
-                        <div>
-                            <label>
-                                <input type='radio' name='gender' value='1' />
-                                <span>Male</span>
-                            </label>
-                            <label>
-                                <input type='radio' name='gender' value='2' />
-                                <span>Female</span>
-                            </label>
-                            <label>
-                                <input type='radio' name='gender' value='3' />
-                                <span>Others</span>
-                            </label>
+                <div className='flex-full flex-col jc-c ai-c'>  
+                    <form id='signup-form' className='form sign-up-form' onSubmit={registration}>
+                        <h1 className='header primary'>Registration</h1>
+                        <div className='input-block'>
+                            <div className='customized-radio-sticky'>
+                                <label>Registration as</label>
+                                <div>
+                                    <label className='flex-full'>
+                                        <input type='radio' name='user' value='1' />
+                                        <span>Admin</span>
+                                    </label>
+                                    <label className='flex-full'>
+                                        <input type='radio' name='user' value='2' />
+                                        <span>Student</span>
+                                    </label>
+                                </div>
+                                <div className='response'></div>
+                            </div>
                         </div>
-                        <div className='response'></div>
-                    </div>
-                    <div className='input-container-bb'>
-                        <input type='number' name='contact' />
-                        <label>Contact</label>
-                        <div className='response'></div>
-                    </div>
-                </div>
-                <div className='input-block ai-c'>
-                    <div className='input-container-bb'>
-                        <input id='email-input' type='email' name='email' />
-                        <label className='flex-row'>Email 
-                            <span id='email-verified' className='success ml-10'>
-                                <i className='fas fa-check mr-10'></i>
-                                Verified
-                            </span>
-                        </label>
-                        <div className='response' id='email-response'></div>
-                    </div>
-                    <label id='email-verify-btn' className='btn btn-success btn-small ml-10' onClick={emailVerification}>Verify</label>
-                </div>
-                <div className='input-block'>
-                    <div className='input-container-bb'>
-                        <input type='text' name='institution' />
-                        <label>Institution</label>
-                        <div className='response'></div>
-                    </div>
-                    <div className='input-container-bb'>
-                        <input type='date' name='dateOfBirth' />
-                        <label>Date of Birth</label>
-                        <div className='response'></div>
-                    </div>
-                </div>
-                <div className='input-block'>
-                    <div className='input-container-bb'>
-                        <input type='password' name='password' />
-                        <label>Password</label>
-                        <div className='response'></div>
-                    </div>
-                    <div className='input-container-bb'>
-                        <input type='password' name='confirmPassword' />
-                        <label>Confirm Password</label>
-                        <div className='response'></div>
-                    </div>
-                </div>
-                <div className='flex-row jc-sb'>
-                    <div className='btn btn-fade btn-small' onClick={registrationReset}>Reset</div>
-                    <button id="registration-btn" className='btn btn-secondary btn-small'>Register</button>
-                </div>
-                <div className='footer'>
-                    Already have an account ? <Link className='anchor-color-primary' to='/signin'>Sign In</Link>
-                </div>
-            </form>
-        </div>
+                        <div className='input-block'>
+                            <div className='input-container-floating-bb'>
+                                <input type='text' name='fullName' required/>
+                                <label>Full Name</label>
+                                <div className='response'></div>
+                            </div>
+                        </div>
+                        <div className='input-block'>
+                            <div className='input-container-floating-bb'>
+                                <input id='email-input' type='email' name='email' required/>
+                                <label className='flex-row'>Email 
+                                    <span id='email-verified' className='success ml-10'>
+                                        <i className='fas fa-check mr-10'></i>
+                                        Verified
+                                    </span>
+                                </label>
+                                <div className='response' id='email-response'></div>
+                            </div>
+                            <div className='input-container-floating-bb'>
+                                <input type='number' name='contact' required/>
+                                <label>Contact</label>
+                                <div className='response'></div>
+                            </div>
+                        </div>
+                        {/* <div className='input-block ai-c'>
+                            <label id='email-verify-btn' className='btn btn-success btn-small ml-10' onClick={emailVerification}>Verify</label>
+                        </div> */}
+                        <div className='input-block'>
+                            <div className='input-container-floating-bb'>
+                                <input type='password' name='password' required/>
+                                <label>Password</label>
+                                <div className='response'></div>
+                            </div>
+                            <div className='input-container-floating-bb'>
+                                <input type='password' name='confirmPassword' required/>
+                                <label>Confirm Password</label>
+                                <div className='response'></div>
+                            </div>
+                        </div>
+                        <div className='flex-row jc-sb'>
+                            <div className='btn btn-fade btn-small' onClick={registrationReset}>Reset</div>
+                            <button id="registration-btn" className='btn btn-primary btn-small'>Register</button>
+                        </div>
+                        <div className='footer'>
+                            Problem in registration? <Link className='anchor-color-primary' to='/support'>Support</Link>
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </>
     )
 }
 
