@@ -1,5 +1,8 @@
 .plans {
     padding: 20px 150px;
+    background-image: url('../../../public/images/plans.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .plans h1 {
     display: flex;
@@ -14,11 +17,8 @@
     justify-content: center;
 }
 .plan-card {
-    /* background-image: url('../../../public/images/plan-card.jpeg'); */
-    background: rgb(255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
     display: flex;
     /* flex: 1; */
     flex-direction: column;
@@ -27,12 +27,22 @@
     margin-bottom: 40px;
     color: #3a3a3a;
     line-height: 1.6;
+    position: relative;
+    border-radius: 20px;
+    background: white;
+}
+.plan-card > div:hover {
+    background: rgb(8, 156, 255, 0.1);
 }
 .plan-card > div {
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.1);
     position: relative;
+    background: rgb(255, 255, 255);
     flex: 1;
     padding: 30px;
     padding-bottom: 50px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .plan-card .plan-name {
     position: absolute;
@@ -43,21 +53,74 @@
     border-radius: 25px;
     bottom: -20px;
     box-shadow: 0px 0px 7px 0px rgb(8, 156, 255, 0.6);
-    background: rgba(24, 155, 35, 0.8);
+    background: rgb(8, 156, 255, 0.8);
     color: white;
+    z-index: 10;
+}
+.plan-card .plan-name:hover {
+    background: rgb(8, 156, 255, 0.8);
+}
+.plan-card .plan-name:hover ~ div {
+    background: rgb(8, 156, 255, 0.1);
 }
 .plan-card .plan-charge {
     font-size: 35px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(8, 156, 255);
+    color: rgb(62 199 72);
+}
+.plan-card .plan-duration {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 104, 51);
+    margin-bottom: 10px;
 }
 .plan-card .plan-includes {
+    font-size: 14px;
 }
 .plan-card li {
     list-style: none;
 }
-.tick {
-    color: #69ff3b;
+.available {
+    color: rgba(24, 155, 35, 0.7);
+}
+.not-available {
+    color: rgb(253, 66, 66, 0.7);
+}
+.plan-items > div {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-rupee-sign {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 200px;
+    transition: translate(-50%, -50%);
+    color: rgb(8, 156, 255, 0.15);
+}
+.plan-card .bubble-tl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: rgb(250, 46, 124, 0.5);
+    border-radius: 50%;
+}
+.plan-card .bubble-tr {
+    position: absolute;
+    right: -60%;
+    top: -30%;
+    width: 300px;
+    height: 300px;
+    background: rgba(24, 155, 35, 0.4);
+    border-radius: 50%;
 }

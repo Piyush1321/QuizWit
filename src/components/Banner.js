@@ -11,7 +11,7 @@ function Banner() {
             <div className='flex-row jc-c mt-20'>
               <button id='faq-btn' className='cover-btn mr-20'><i className='fas fa-question mr-10'></i> FAQ</button>
               <Link className='cover-btn mr-20' to='signup'><i className='fas fa-play mr-10'></i> Get Started</Link>
-              <button id='view-plans-btn' className='cover-btn'><i className='fas fa-play mr-10'></i> View Plans</button>
+              <button  className='cover-btn view-plans-btn'><i className='fas fa-rupee-sign mr-10'></i> View Plans</button>
             </div>
             <p className='tagline-2'>Best online learning center.</p>
           </div>

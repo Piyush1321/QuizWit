@@ -57,52 +57,10 @@ function Faq() {
                 </div>
                 <div className='answer'>
                     <div>
-                        We provide different subscription plans under which certain quantity of exam creation and role assign are available.
-                        Currently we are providing 3 plans.
-                        <div className='flex-row jc-e'>
-                            <a href='' className='primary ul'>View Plans</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='container'>
-                <div className='question'>
-                    <div>
-                        Features?
-                    </div>
-                    <div className='icon-container'>
-                        <i className='fas fa-plus'></i>
-                    </div>
-                </div>
-                <div className='answer'>
-                    <div className='flex-row'>
-                        <div className='flex-full'>
-                            <div className='primary'>Admin</div>
-                            <ul className='ul-circle pl-20'>
-                                <li>Set navigation control</li>
-                                <li>Set Timer Exam/Section/Question</li>
-                                <li>Question types
-                                    <ul className='ul-decimal pl-20'>
-                                        <li>Multiple Choice Questions</li>
-                                        <li>One Word Answers</li>
-                                        <li>True/False</li>
-                                        <li>Programming</li>
-                                        <li>Query</li>
-                                    </ul>
-                                </li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div className='flex-full'>
-                            <div className='primary'>Student</div>
-                            <ul className='ul-circle pl-20'>
-                                <li>Exam analytics</li>
-                                <li>Great user experience</li>
-                                <li>Fast</li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
+                        We provide different subscription plans under which certain features are available.
+                        Currently we are providing 3 plans for administrator and 2 plans for students.
+                        <br />
+                        For more <span href='' className='primary ul view-plans-btn cursor-p'>View Plans</span>
                     </div>
                 </div>
             </div>
