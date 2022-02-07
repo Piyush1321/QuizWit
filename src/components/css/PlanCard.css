@@ -1,8 +1,5 @@
 .plans {
-    padding: 20px 150px;
-    background-image: url('../../../public/images/plans.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 20px 100px;
 }
 .plans h1 {
     display: flex;
