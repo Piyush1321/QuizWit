@@ -19,12 +19,12 @@
     /* font-weight: bold; */
     font-size: 20px;
     padding: 20px;
-    background: #303030;
+    background: rgb(250, 46, 124, 0.8);
     display: flex;
     cursor: pointer;
 }
 .faq .question:hover {
-    background: #242424;
+    background: rgb(250, 46, 124, 0.9);
 }
 .faq .question div:nth-child(1) {
     flex: 1;
