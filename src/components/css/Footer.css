@@ -1,5 +1,5 @@
 .footer-container {
-    background: white;
+    background: #303030;
     padding: 4rem 0 2rem 0;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
   
     margin-bottom: 24px;
     padding: 24px;
-    color: #303030;
+    color: rgb(233, 233, 233);
   }
   
   .footer-subscription > p {
@@ -46,9 +46,8 @@
     min-width: 220px;
     border: 2px solid rgb(8, 156, 255);
     background: transparent;
-    color: #303030;
+    color: rgb(233, 233, 233);
   }
-  
   .footer-links {
     width: 100%;
     max-width: 1000px;
@@ -77,11 +76,11 @@
   }
   
   .footer-link-items > h2 {
-    color: #303030;
+    color: rgb(233, 233, 233);
   }
   
   .footer-link-items a {
-    color: #303030;
+    color: rgb(233, 233, 233);
     text-decoration: none;
     margin-bottom: 0.5rem;
   }
@@ -102,7 +101,7 @@
   
   /* Social Icons */
   .social-icon-link {
-    color: #303030;
+    color: rgb(233, 233, 233);
     font-size: 24px;
   }
   
@@ -128,7 +127,7 @@
   }
   
   .social-logo {
-    color: #303030;
+    color: rgb(233, 233, 233);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -140,7 +139,7 @@
   }
   
   .website-rights {
-    color: #303030;
+    color: rgb(233, 233, 233);
     margin-bottom: 16px;
   }
   

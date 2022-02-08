@@ -15,9 +15,11 @@ function PlanCard(props) {
       <div>
           <i className='fas fa-rupee-sign card-rupee-sign'></i>
           <div className='bubble-tl'></div>
-          <div className='bubble-tr'></div>
+          <div className='bubble-tr'>
+            <span>{props.durationInMonths} <br /> {props.durationInMonths > 1 ? 'Months': 'Month' }</span>
+          </div>
           <div className='plan-charge'>{props.amount} <i className='fas fa-rupee-sign ml-10'></i></div>
-          <div className='plan-duration'> For {props.durationInMonths} {props.durationInMonths > 1 ? 'months': 'month' }</div>
+          <div className='plan-duration'></div>
           <div className='plan-includes'>{contains.map((v, key) => {
             return <li key={key} className='flex-row plan-items'>
               <div>
