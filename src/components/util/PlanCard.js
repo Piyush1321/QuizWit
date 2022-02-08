@@ -14,7 +14,7 @@ function PlanCard(props) {
       <div className='plan-name'>{props.name}</div>
       <div>
           <i className='fas fa-rupee-sign card-rupee-sign'></i>
-          <div className='bubble-tl'></div>
+          {/* <div className='bubble-tl'></div> */}
           <div className='bubble-tr'>
             <span>{props.durationInMonths} <br /> {props.durationInMonths > 1 ? 'Months': 'Month' }</span>
           </div>

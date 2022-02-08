@@ -1,3 +1,9 @@
+.contact-us {
+    background: url('../../../public/images/cover-1.jpeg');
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .contact-us form {
     background: rgba(255, 255, 255, 0.9);
     margin: 30px;
