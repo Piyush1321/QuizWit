@@ -1,6 +1,5 @@
 .contact-us {
-    background: url('../../../public/images/cover-1.jpeg');
-    height: 90vh;
+    background: url('../../../public/images/contactus-cover.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -10,4 +9,8 @@
     border-radius: 15px;
     padding: 20px;
     width: 500px;
+}
+.contactus-description
+{
+    color: white;
 }
