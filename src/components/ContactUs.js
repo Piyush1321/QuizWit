@@ -68,7 +68,7 @@ function ContactUs() {
             <p className='m-20'>Whether you have a question about features,trials,pricing,demo,or anything else,our team is ready to answer all your questions.</p>
           </div>
           <div>
-            <h1 className='m-20'>We are 24x7 available for you.</h1>
+            <h1 className='m-20'>We are 24x7 available for you. </h1>
           </div>
         </div> 
       </div>
