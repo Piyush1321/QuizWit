@@ -11,6 +11,7 @@ import Footer from './components/includes/Footer';
 import Signup from './components/Signup';
 import ContactUs from './components/ContactUs';
 import CookieDialog from './components/util/CookieDialog';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/signup' element={<Signup />} />
+          <Route path='/signup' element={<Signup />} />          
           <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='/about-us' element={<AboutUs />} />
         </Routes>
         <Footer />
         <CookieDialog />

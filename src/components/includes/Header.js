@@ -27,7 +27,7 @@ function Header() {
                     <NavLink className='inactive' to='/services'  >Services</NavLink>
                     <NavLink className='inactive' to='/products' >Blogs</NavLink>
                     <NavLink className='inactive' to='/contact-us' >Contact Us</NavLink>
-                    <NavLink className='inactive' to='/dashboard' >About Us</NavLink>
+                    <NavLink className='inactive' to='/about-us' >About Us</NavLink>
                 </div>
                 <div className='sign-up flex-row'>
                     <Link to='/signup' className='btn btn-primary btn-small'>Sign Up</Link>
