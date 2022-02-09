@@ -1,0 +1,7 @@
+.about-us {
+    background-image: url('../../../public/images/contactus-cover.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
