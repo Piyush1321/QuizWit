@@ -2,15 +2,21 @@
     background: url('../../../public/images/contactus-cover.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 10px;
 }
 .contact-us form {
-    background: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(45deg, rgb(224 224 224), #ffffff);
     margin: 30px;
     border-radius: 15px;
     padding: 20px;
     width: 500px;
 }
+.contact-us form input, textarea {
+color: rgba(233, 233, 233);
+
+}
+
 .contactus-description
 {
-    color: white;
+    color: rgba(233, 233, 233);
 }
