@@ -30,6 +30,7 @@ function Signup() {
     }
 
     const populateResponse = (res) => {
+        console.log(res);
         document.getElementById('registration-btn').innerText = 'Register';
         let responseBlock = document.getElementById('signup-form').getElementsByClassName('response');
         if(res.error) {
@@ -45,18 +46,15 @@ function Signup() {
             let icon = '<i class="fas fa-exclamation-circle mr-5"></i>';
             responseBlock[0].innerHTML = (log.user ? icon + log.user : '');
             responseBlock[1].innerHTML = (log.firstName ? icon + log.firstName : '');
-
-            responseBlock[3].innerHTML = (log.gender ? icon + log.gender : '');
-            responseBlock[4].innerHTML = (log.contact ? icon + log.contact: '');
-            responseBlock[5].innerHTML = (log.email ? icon + log.email: '');
+            responseBlock[2].innerHTML = (log.email ? icon + log.email: '');
+            responseBlock[3].innerHTML = (log.contact ? icon + log.contact: '');
             if(log.email) {
                 document.getElementById('email-verify-btn').style.display = 'block';
                 document.getElementById('email-verified').style.display = 'none';
                 document.getElementById('email-input').disabled = false;
             }
-            responseBlock[7].innerHTML = (log.dateOfBirth ? icon + log.dateOfBirth: '' );
-            responseBlock[8].innerHTML = (log.password ? icon + log.password: '');
-            responseBlock[9].innerHTML = (log.confirmPassword ? icon + log.confirmPassword: '' );
+            responseBlock[4].innerHTML = (log.password ? icon + log.password: '');
+            responseBlock[5].innerHTML = (log.confirmPassword ? icon + log.confirmPassword: '' );
         }
 
     }
