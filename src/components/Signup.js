@@ -48,11 +48,11 @@ function Signup() {
             responseBlock[1].innerHTML = (log.firstName ? icon + log.firstName : '');
             responseBlock[2].innerHTML = (log.email ? icon + log.email: '');
             responseBlock[3].innerHTML = (log.contact ? icon + log.contact: '');
-            if(log.email) {
-                document.getElementById('email-verify-btn').style.display = 'block';
-                document.getElementById('email-verified').style.display = 'none';
-                document.getElementById('email-input').disabled = false;
-            }
+            // if(log.email) {
+            //     document.getElementById('email-verify-btn').style.display = 'block';
+            //     document.getElementById('email-verified').style.display = 'none';
+            //     document.getElementById('email-input').disabled = false;
+            // }
             responseBlock[4].innerHTML = (log.password ? icon + log.password: '');
             responseBlock[5].innerHTML = (log.confirmPassword ? icon + log.confirmPassword: '' );
         }
