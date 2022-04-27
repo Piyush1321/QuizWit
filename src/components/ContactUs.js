@@ -61,14 +61,14 @@ function ContactUs() {
         <div className='flex-full flex-col jc-c contactus-description'>
           <div>
             <h1 className='m-20'>How can We help?</h1>
-            <p className='m-20'>Please Fill out our contact us form.We will reach out to you soon.</p>
+            <p className='m-20'>Please Fill out our contact us form. We will reach out to you soon.</p>
           </div>
           <div>
             <h1 className='m-20'>We'd love to hear from you</h1>
             <p className='m-20'>Whether you have a question about features,trials,pricing,demo,or anything else,our team is ready to answer all your questions.</p>
           </div>
           <div>
-            <h1 className='m-20'>We are 24x7 available for you. n</h1>
+            <h1 className='m-20'>We are 24x7 available for you</h1>
           </div>
         </div> 
       </div>

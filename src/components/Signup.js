@@ -38,7 +38,6 @@ function Signup() {
         }
         if(res.success) {
             registrationReset();
-            alert('login successful');
             Flash.message('Registration successful', 'bg-success');
         }
         else {
