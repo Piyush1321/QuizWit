@@ -41,8 +41,7 @@ function Faq() {
                     </div>
                 </div>
                 <div className='answer'>
-                    <div>QuizWit is a online exam web application that enables you to tackle your weak points in exams with the help of analytics.
-
+                    <div>QuizWit is a online exam web application with salient features for both the users Aministrator and Student. 
                     </div>
                 </div>
             </div>
@@ -58,7 +57,6 @@ function Faq() {
                 <div className='answer'>
                     <div>
                         We provide different subscription plans under which certain features are available.
-                        Currently we are providing 3 plans for administrator and 2 plans for students.
                         <br />
                         For more <span href='' className='primary ul view-plans-btn cursor-p'>View Plans</span>
                     </div>
@@ -75,7 +73,7 @@ function Faq() {
                 </div>
                 <div className='answer'>
                     <div>
-                        We use AWS S3 to store multimedia files for fast processing.
+                        User friendly UI, Fast and automated.
                     </div>
                 </div>
             </div>

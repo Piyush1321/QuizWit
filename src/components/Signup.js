@@ -255,7 +255,7 @@ function Signup() {
                             <button id="registration-btn" className='btn btn-primary btn-small'>Register</button>
                         </div>
                         <div className='footer'>
-                            Problem in registration? <Link className='anchor-color-primary' to='/support'>Support</Link>
+                            Problem in registration? <Link className='anchor-color-primary' to='/contact-us'>Support</Link>
                         </div>
                     </form>
                 </div>  

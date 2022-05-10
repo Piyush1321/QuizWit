@@ -37,7 +37,7 @@ function Header() {
                                 <p>Sign In as</p>
                                 <div className='mt-20 mb-20'>
                                     <a className='btn btn-primary btn-medium' href='http://localhost:3001' target='_blank'><i className='fas fa-user-cog mr-5'></i> Admin</a>
-                                    <a className='btn btn-secondary btn-medium ml-10' href='http://localhost:3002' target='_blank'><i className='fas fa-user-graduate mr-5'></i> Student</a>
+                                    <a className='btn btn-secondary btn-medium ml-10' href='http://localhost:3003' target='_blank'><i className='fas fa-user-graduate mr-5'></i> Student</a>
                                 </div>
                                 <div></div>
                             </div>

@@ -12,6 +12,7 @@ import Signup from './components/Signup';
 import ContactUs from './components/ContactUs';
 import CookieDialog from './components/util/CookieDialog';
 import AboutUs from './components/AboutUs';
+import ManagementUser from './components/ManagementUser';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/signup' element={<Signup />} />          
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/management-user' element={<ManagementUser />} />
         </Routes>
         <Footer />
         <CookieDialog />
